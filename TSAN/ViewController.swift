@@ -15,6 +15,8 @@ class ViewController: UIViewController {
 	var data: [Driver] = []
 	var numberPositions: Int = 6
 	var service: DriverService = DriverService()
+  
+  var lock: NSLock = NSLock()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -27,21 +29,23 @@ class ViewController: UIViewController {
 	}
   
 	func fetchDrivers() {
-		let group = DispatchGroup()
-		
-		for position in 1...numberPositions {
-			group.enter()
-			self.service.fetchDriver(position: position, completion: { (driver) in
-				if let driver = driver {
-					self.data.append(driver)
-				}
-				group.leave()
-			})
-		}
-		
-		group.notify(queue: .main) {
-			self.tableView.reloadData()
-		}
+    let group = DispatchGroup()
+    
+    for i in 1...numberPositions {
+      group.enter()
+      self.service.fetchDriver(position: i) { (driver) in
+        if let driver = driver {
+          self.lock.lock()
+          self.data.append(driver)
+          self.lock.unlock()
+        }
+        group.leave()
+      }
+    }
+    
+    group.notify(queue: .main) {
+      self.tableView.reloadData()
+    }
 	}
 	
 	func hexStringToUIColor (hex:String) -> UIColor {
