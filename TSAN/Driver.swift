@@ -9,7 +9,8 @@
 import Foundation
 
 struct Driver {
-  var name: String
-  var number: Int
-  
+	var name: String
+	var number: Int
+	var position: Int
+	var teamColor: String
 }

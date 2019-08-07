@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		457B39A222FA6726005DB979 /* DriverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B39A022FA6726005DB979 /* DriverTableViewCell.swift */; };
+		457B39A322FA6726005DB979 /* DriverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 457B39A122FA6726005DB979 /* DriverTableViewCell.xib */; };
 		E3E8AA2422F9E357008C7F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8AA2322F9E357008C7F9B /* AppDelegate.swift */; };
 		E3E8AA2622F9E357008C7F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8AA2522F9E357008C7F9B /* ViewController.swift */; };
 		E3E8AA2922F9E357008C7F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E8AA2722F9E357008C7F9B /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		457B39A022FA6726005DB979 /* DriverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewCell.swift; sourceTree = "<group>"; };
+		457B39A122FA6726005DB979 /* DriverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverTableViewCell.xib; sourceTree = "<group>"; };
 		E3E8AA2022F9E357008C7F9B /* TSAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E8AA2322F9E357008C7F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E8AA2522F9E357008C7F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				E3E8AA2F22F9E357008C7F9B /* Info.plist */,
 				E3E8AA3522F9E450008C7F9B /* DriverService.swift */,
 				E3E8AA3722F9E4CF008C7F9B /* Driver.swift */,
+				457B39A022FA6726005DB979 /* DriverTableViewCell.swift */,
+				457B39A122FA6726005DB979 /* DriverTableViewCell.xib */,
 			);
 			path = TSAN;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 				E3E8AA2E22F9E357008C7F9B /* LaunchScreen.storyboard in Resources */,
 				E3E8AA2B22F9E357008C7F9B /* Assets.xcassets in Resources */,
 				E3E8AA2922F9E357008C7F9B /* Main.storyboard in Resources */,
+				457B39A322FA6726005DB979 /* DriverTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457B39A222FA6726005DB979 /* DriverTableViewCell.swift in Sources */,
 				E3E8AA2622F9E357008C7F9B /* ViewController.swift in Sources */,
 				E3E8AA2422F9E357008C7F9B /* AppDelegate.swift in Sources */,
 				E3E8AA3622F9E450008C7F9B /* DriverService.swift in Sources */,
